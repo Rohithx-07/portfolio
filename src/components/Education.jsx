@@ -20,10 +20,10 @@ const Education = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="mb-16 md:mb-24 text-right"
+                    className="mb-16 md:mb-24 text-left"
                 >
                     <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">Education</h2>
-                    <div className="h-1 w-24 bg-white mt-4 ml-auto"></div>
+                    <div className="h-1 w-24 bg-white mt-4 mr-auto"></div>
                 </motion.div>
 
                 <div className="flex flex-col">

@@ -17,6 +17,11 @@ const ACHIEVEMENTS_DATA = [
         title: 'Top Tech Developers',
         description: 'Data Science - Intern.',
         icon: <FiAward size={32} />
+    },
+    {
+        title: 'UI Path Certification',
+        description: '',
+        icon: <FiAward size={32} />
     }
 ];
 
