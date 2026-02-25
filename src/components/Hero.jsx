@@ -2,6 +2,30 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
+/* =========================================================
+   TICKER
+   ========================================================= */
+const Ticker = () => {
+    const items = [
+        'React', 'Node.js', 'TypeScript', 'Python', 'MongoDB',
+        'AWS', 'Three.js', 'Docker', 'PostgreSQL', 'Redis',
+        'GraphQL', 'Next.js', 'Tailwind', 'Prisma', 'Figma'
+    ];
+    const doubled = [...items, ...items];
+
+    return (
+        <div className="ticker border-t border-b border-[#222]">
+            <div className="ticker-track">
+                {doubled.map((item, i) => (
+                    <span key={i} className="ticker-item">
+                        {item}<span className="ticker-sep">&#x2014;</span>
+                    </span>
+                ))}
+            </div>
+        </div>
+    );
+};
+
 const Hero = () => {
     return (
         <section id="Home" className="min-h-screen flex items-center justify-center bg-[#0a0a0a] text-white px-6 md:px-12 relative overflow-hidden">
@@ -56,6 +80,8 @@ const Hero = () => {
 
             {/* Subtle aesthetic background grid/lines */}
             <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'linear-gradient(#222 1px, transparent 1px), linear-gradient(90deg, #222 1px, transparent 1px)', backgroundSize: '100px 100px' }}></div>
+
+            <Ticker />
         </section>
     );
 };
