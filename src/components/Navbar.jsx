@@ -1,78 +1,66 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
-import { HiMenuAlt3, HiX } from "react-icons/hi";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+import { FiMenu, FiX } from 'react-icons/fi';
 
-const navLinks = [
-    { name: "Home", to: "home" },
-    { name: "About", to: "about" },
-    { name: "Skills", to: "skills" },
-    { name: "Projects", to: "projects" },
-    { name: "Experience", to: "experience" },
-    { name: "Contact", to: "contact" },
+const NAV_LINKS = [
+    'About', 'Work', 'Skills', 'XP', 'Contact'
 ];
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            setIsScrolled(window.scrollY > 50);
         };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
-        <nav
-            className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled
-                ? "glass shadow-lg py-4"
-                : "bg-transparent py-6"
-                }`}
-        >
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0a0a0a] py-4 shadow-lg' : 'bg-transparent py-6'}`}>
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-                {/* Logo */}
-                <div className="text-2xl font-bold tracking-wider text-white">
-                    Rohith Kumar M <span className="text-primary"></span>
+                <div className="text-2xl font-bold tracking-widest text-white uppercase">
+                    <Link to="Home" smooth={true} duration={500} className="cursor-pointer">
+                        Rohith Kumar M
+                    </Link>
                 </div>
 
-                {/* Desktop Nav */}
+                {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-8">
-                    {navLinks.map((link) => (
+                    {NAV_LINKS.map((link) => (
                         <Link
-                            key={link.name}
-                            to={link.to}
+                            key={link}
+                            to={link}
                             smooth={true}
                             duration={500}
-                            className="text-gray-300 hover:text-primary transition-colors cursor-pointer text-sm uppercase tracking-wide font-medium"
+                            className="text-sm uppercase tracking-widest text-[#f8f8f8] hover:text-[#888888] transition-colors cursor-pointer"
                         >
-                            {link.name}
+                            {link}
                         </Link>
                     ))}
                 </div>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden text-gray-300 hover:text-white"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? <HiX size={28} /> : <HiMenuAlt3 size={28} />}
-                </button>
+                {/* Mobile Menu Toggle */}
+                <div className="md:hidden text-white cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                </div>
             </div>
 
-            {/* Mobile Nav */}
+            {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full glass flex flex-col items-center py-6 space-y-6">
-                    {navLinks.map((link) => (
+                <div className="md:hidden bg-[#0a0a0a] w-full absolute top-full left-0 py-4 flex flex-col items-center shadow-xl">
+                    {NAV_LINKS.map((link) => (
                         <Link
-                            key={link.name}
-                            to={link.to}
+                            key={link}
+                            to={link}
                             smooth={true}
                             duration={500}
                             onClick={() => setIsOpen(false)}
-                            className="text-gray-300 hover:text-primary transition-colors cursor-pointer text-lg font-medium"
+                            className="py-3 text-sm uppercase tracking-widest text-white w-full text-center hover:bg-[#1a1a1a] transition-colors"
                         >
-                            {link.name}
+                            {link}
                         </Link>
                     ))}
                 </div>
