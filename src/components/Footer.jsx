@@ -4,7 +4,7 @@ import { FiArrowUp } from 'react-icons/fi';
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-950 text-slate-400 py-10 px-6 md:px-12 border-t border-slate-900">
+        <footer className="bg-[#050505] text-[#888888] py-10 px-6 md:px-12 border-t border-[#1a1a1a]">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
 
                 <div className="text-center md:text-left mb-6 md:mb-0">
@@ -20,7 +20,7 @@ const Footer = () => {
                     to="Home"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer flex items-center gap-2 uppercase text-xs tracking-widest text-slate-400 hover:text-cyan-400 transition-colors border border-slate-800 px-6 py-3 hover:border-cyan-400 rounded-sm"
+                    className="cursor-pointer flex items-center gap-2 uppercase text-xs tracking-widest hover:text-white transition-colors border border-[#333] px-6 py-3 hover:border-white"
                 >
                     <span>Back to Top</span>
                     <FiArrowUp />

@@ -2,11 +2,9 @@
 
 @theme {
   --font-sans: "Inter", "Poppins", sans-serif;
-  --color-primary-black: #020617; /* slate-950 */
-  --color-primary-white: #f8fafc; /* slate-50 */
-  --color-soft-grey: #94a3b8; /* slate-400 */
-  --color-accent-primary: #6366f1; /* indigo-500 */
-  --color-accent-secondary: #06b6d4; /* cyan-500 */
+  --color-primary-black: #0a0a0a;
+  --color-primary-white: #f8f8f8;
+  --color-soft-grey: #888888;
 }
 
 /* Global resets for the minimal B&W look */
@@ -29,7 +27,7 @@ body {
   background: var(--color-primary-black);
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b; /* slate-800 */
+  background: #333;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -37,6 +35,6 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-accent-primary);
-  color: var(--color-primary-white);
+  background-color: var(--color-primary-white);
+  color: var(--color-primary-black);
 }
