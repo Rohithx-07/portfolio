@@ -3,21 +3,17 @@ import { motion } from 'framer-motion';
 
 const SKILLS_CATEGORIES = [
     {
-        title: 'Frontend',
-        skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Redux', 'HTML/CSS']
+        title: 'Programming',
+        skills: ['Java', 'Python', 'C']
     },
     {
-        title: 'Backend',
-        skills: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL']
+        title: 'Web Development',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js']
     },
     {
-        title: 'Tools & DevOps',
-        skills: ['Git / GitHub', 'Docker', 'AWS', 'Vercel', 'Linux', 'CI/CD Pipelines', 'Jest']
+        title: 'Tools & Tech',
+        skills: ['Git / GitHub', 'VS Code', 'Linux']
     },
-    {
-        title: 'AI / ML',
-        skills: ['OpenAI API', 'LangChain', 'HuggingFace', 'Pandas', 'TensorFlow Basics', 'RAG Architectures']
-    }
 ];
 
 const Skills = () => {
@@ -31,7 +27,7 @@ const Skills = () => {
                     transition={{ duration: 0.6 }}
                     className="mb-16 md:mb-24 text-center"
                 >
-                    <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">Capabilities</h2>
+                    <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">Skills</h2>
                     <div className="h-1 w-24 bg-white mt-4 mx-auto"></div>
                 </motion.div>
 

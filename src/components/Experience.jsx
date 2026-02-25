@@ -3,23 +3,22 @@ import { motion } from 'framer-motion';
 
 const EXPERIENCE_DATA = [
     {
-        company: 'TechNova Solutions',
-        role: 'Full Stack Developer',
-        duration: 'Jan 2024 - Present',
+        company: 'CODEBIND TECHNOLOGIES',
+        role: 'Web Development - Intern',
+        duration: 'December 2024',
         responsibilities: [
-            'Architected and deployed a containerized microservices platform using Node.js and Docker.',
-            'Reduced initial load times by 40% through aggressive caching and SSR optimization.',
-            'Lead a team of 3 junior developers, establishing code review practices and CI/CD pipelines.'
+            'Developed hands-on expertise in front-end web development by contributing to live project tasks.',
+            'Built and optimized responsive user interfaces using HTML, CSS, and JavaScript.',
+            'Gained solid exposure to Full-Stack Development methodologies and collaborative workflows within software development teams.'
         ]
     },
     {
-        company: 'Innovate AI Labs',
-        role: 'Frontend Engineering Intern',
-        duration: 'May 2023 - Dec 2023',
+        company: 'Top Tech Developers',
+        role: 'Data Science - Intern',
+        duration: 'July 2025 - Sept 2025',
         responsibilities: [
-            'Developed responsive UI components for an internal ML model dashboard using React and Tailwind.',
-            'Integrated real-time websocket data to display live model training metrics.',
-            'Improved overall accessibility score from 75 to 98 on Lighthouse.'
+            'Aspiring Data Science enthusiast with strong analytical and problem-solving skills, proficient in Python, data analysis, and foundational machine learning techniques to extract meaningful insights from data.',
+            'Passionate about applying data-driven solutions to real-world problems, continuously learning and staying updated with emerging trends in Data Science and Artificial Intelligence.',
         ]
     }
 ];

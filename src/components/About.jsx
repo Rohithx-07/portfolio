@@ -25,13 +25,17 @@ const About = () => {
                         className="w-full md:w-1/2"
                     >
                         <h3 className="text-2xl md:text-3xl font-bold mb-6 uppercase tracking-wide">
-                            Software Engineer based in India.
+                            Rohith Kumar M
+                        </h3>
+
+                        <h3 className="text-2xl md:text-3xl font-bold mb-6 uppercase tracking-wide">
+                            Software Engineer
                         </h3>
                         <p className="text-lg text-gray-700 font-light leading-relaxed mb-6">
-                            I am passionate about building scalable, high-performance web applications with a strong emphasis on clean architecture and minimal design. With expertise in the full stack, I take ownership of products from database schema design to polished user interfaces.
+                            Motivated Computer Science Engineering student with strong analytical and problem-solving skills. Passionate about software development, emerging technologies, and building scalable real-world applications.
                         </p>
                         <p className="text-lg text-gray-700 font-light leading-relaxed">
-                            Beyond traditional web development, I am an AI enthusiast deeply interested in integrating intelligent features into everyday tools to augment human capabilities. I believe in engineering software that not only works flawlessly but is heavily intentional in its design and purpose.
+                            Experienced in developing hands-on projects through collaborative teamwork. Quick learner with a proactive mindset and commitment to continuous improvement.
                         </p>
                     </motion.div>
 
@@ -47,7 +51,7 @@ const About = () => {
                             <div className="absolute inset-0 flex items-center justify-center border-4 border-black p-2">
                                 <div className="w-full h-full bg-[#1a1a1a] flex flex-col justify-end p-8">
                                     <p className="text-[#888888] text-xs uppercase tracking-widest mb-2">IMAGE_SRC_MISSING</p>
-                                    <p className="text-white text-2xl font-bold uppercase truncate">RAGHU_PROFILE.JPG</p>
+                                    <p className="text-white text-2xl font-bold uppercase truncate">Rohith_Kumar_M.JPG</p>
                                 </div>
                             </div>
                         </div>

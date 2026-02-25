@@ -13,7 +13,7 @@ const Hero = () => {
                     transition={{ duration: 0.5 }}
                     className="text-[#888888] text-sm md:text-base tracking-widest uppercase mb-4"
                 >
-                    System Initialized // Raghu D
+                    System Initialized // Rohith Kumar M
                 </motion.p>
 
                 <motion.h1
@@ -31,7 +31,7 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="text-lg md:text-xl text-[#f8f8f8] font-light tracking-wide mb-10 border-l-2 border-white pl-4"
                 >
-                    Full Stack Developer | AI Enthusiast | Clean Architecture Advocate
+                    Software Engineer
                 </motion.p>
 
                 <motion.div
@@ -48,14 +48,6 @@ const Hero = () => {
                     >
                         View Projects
                     </Link>
-                    <a
-                        href="/resume.pdf"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="cursor-pointer border border-[#888888] text-white px-8 py-4 uppercase text-sm font-bold tracking-widest hover:border-white transition-all duration-300 text-center"
-                    >
-                        Download Resume
-                    </a>
                 </motion.div>
 
             </div>

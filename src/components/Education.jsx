@@ -3,17 +3,12 @@ import { motion } from 'framer-motion';
 
 const EDUCATION_DATA = [
     {
-        degree: 'Bachelor of Technology in Computer Science',
-        college: 'University of Engineering',
-        year: '2022 - 2026',
-        gpa: '8.8 / 10.0',
+        degree: 'Bachelor of Engineering in Computer Science',
+        college: 'Panimalar Engineering College',
+        year: '2023 - 2027',
+        gpa: '7.8 / 10.0',
     },
-    {
-        degree: 'Higher Secondary Education',
-        college: 'State Board of Education',
-        year: '2020 - 2022',
-        gpa: '92%',
-    }
+
 ];
 
 const Education = () => {

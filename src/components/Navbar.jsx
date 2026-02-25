@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const NAV_LINKS = [
-    'Home', 'About', 'Education', 'Projects', 'Skills', 'Experience', 'Achievements', 'Contact'
+    'About', 'Work', 'Skills', 'XP', 'Contact'
 ];
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
                 <div className="text-2xl font-bold tracking-widest text-white uppercase">
                     <Link to="Home" smooth={true} duration={500} className="cursor-pointer">
-                        Raghu D
+                        Rohith Kumar M
                     </Link>
                 </div>
 

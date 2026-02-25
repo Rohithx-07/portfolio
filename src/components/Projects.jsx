@@ -4,33 +4,10 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const PROJECTS_DATA = [
     {
-        title: 'Nexus Data Pipeline',
-        description: 'High-throughput data processing pipeline built for real-time analytics. Processes over 1M records per second using distributed streaming.',
-        tags: ['Go', 'Kafka', 'PostgreSQL', 'Docker'],
-        github: '#',
-        demo: '#',
+        title: 'Event Management',
+        description: 'This project focuses on building a responsive and interactive website using modern web technologies such as HTML, CSS, and JavaScript. It involves front-end development and user interface design to efficiently handle and display dynamic content.',
+        tags: ['HTML', 'CSS', 'JavaScript'],
     },
-    {
-        title: 'Aura AI Dashboard',
-        description: 'A comprehensive analytics dashboard integrating OpenAI models for predictive business intelligence and intelligent report generation.',
-        tags: ['React', 'TypeScript', 'Node.js', 'OpenAI API'],
-        github: '#',
-        demo: '#',
-    },
-    {
-        title: 'Sentinel Auth System',
-        description: 'Zero-trust authentication microservice featuring OAuth2, biometric integration, and advanced rate limiting mechanisms.',
-        tags: ['Express', 'Redis', 'JWT', 'MongoDB'],
-        github: '#',
-        demo: '#',
-    },
-    {
-        title: 'Velocity E-Commerce',
-        description: 'Headless e-commerce platform with sub-second page loads, implementing ISR and global CDN caching layers.',
-        tags: ['Next.js', 'Tailwind CSS', 'Stripe', 'Supabase'],
-        github: '#',
-        demo: '#',
-    }
 ];
 
 const Projects = () => {
@@ -61,14 +38,6 @@ const Projects = () => {
                             <div>
                                 <div className="flex justify-between items-start mb-6">
                                     <h3 className="text-2xl font-bold uppercase tracking-wider">{project.title}</h3>
-                                    <div className="flex space-x-4">
-                                        <a href={project.github} target="_blank" rel="noreferrer" className="text-[#888888] hover:text-white transition-colors">
-                                            <FiGithub size={24} />
-                                        </a>
-                                        <a href={project.demo} target="_blank" rel="noreferrer" className="text-[#888888] hover:text-white transition-colors">
-                                            <FiExternalLink size={24} />
-                                        </a>
-                                    </div>
                                 </div>
 
                                 <p className="text-[#888888] font-light leading-relaxed mb-8">
