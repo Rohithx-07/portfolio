@@ -9,7 +9,7 @@ const Footer = () => {
 
                 <div className="text-center md:text-left mb-6 md:mb-0">
                     <p className="text-sm tracking-widest uppercase font-semibold">
-                        &copy; 2026 Raghu D.
+                        &copy; 2026 Rohith Kumar M.
                     </p>
                     <p className="text-xs mt-2 uppercase tracking-wide opacity-50">
                         Built with React + Vite | Styled with Tailwind CSS
