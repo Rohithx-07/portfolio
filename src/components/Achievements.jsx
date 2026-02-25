@@ -20,7 +20,7 @@ const ACHIEVEMENTS_DATA = [
     },
     {
         title: 'UI Path Certification',
-        description: '',
+        description: 'UI Path Certification in Automation Testing.',
         icon: <FiAward size={32} />
     }
 ];
