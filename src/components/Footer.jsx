@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { FiArrowUp } from 'react-icons/fi';
+import { FiArrowUp, FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
 
 const Footer = () => {
     return (
@@ -14,6 +14,18 @@ const Footer = () => {
                     <p className="text-xs mt-2 uppercase tracking-wide opacity-50">
                         Built with React + Vite | Styled with Tailwind CSS
                     </p>
+                </div>
+
+                <div className="flex space-x-8 mb-6 md:mb-0">
+                    <a href="https://www.linkedin.com/in/rohith-kumar-m-a043ab2a3/" target="_blank" rel="noopener noreferrer" className="text-[#888888] hover:text-white transition-colors">
+                        <FiLinkedin size={24} />
+                    </a>
+                    <a href="https://github.com/Rohithx-07/" target="_blank" rel="noopener noreferrer" className="text-[#888888] hover:text-white transition-colors">
+                        <FiGithub size={24} />
+                    </a>
+                    <a href="mailto:rohithkumarm2006@gmail.com" className="text-[#888888] hover:text-white transition-colors">
+                        <FiMail size={24} />
+                    </a>
                 </div>
 
                 <Link

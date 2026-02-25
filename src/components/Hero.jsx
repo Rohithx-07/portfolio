@@ -32,6 +32,8 @@ const Hero = () => {
                     className="text-lg md:text-xl text-[#f8f8f8] font-light tracking-wide mb-10 border-l-2 border-white pl-4"
                 >
                     Software Engineer
+                    <br /> Building Scalable and Efficient Software Solutions
+                    <br /> Full Stack Developer
                 </motion.p>
 
                 <motion.div

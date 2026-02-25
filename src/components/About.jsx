@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
 
 const About = () => {
     return (
@@ -34,9 +35,21 @@ const About = () => {
                         <p className="text-lg text-gray-700 font-light leading-relaxed mb-6">
                             Motivated Computer Science Engineering student with strong analytical and problem-solving skills. Passionate about software development, emerging technologies, and building scalable real-world applications.
                         </p>
-                        <p className="text-lg text-gray-700 font-light leading-relaxed">
+                        <p className="text-lg text-gray-700 font-light leading-relaxed mb-8">
                             Experienced in developing hands-on projects through collaborative teamwork. Quick learner with a proactive mindset and commitment to continuous improvement.
                         </p>
+
+                        <div className="flex space-x-6 mt-6">
+                            <a href="https://www.linkedin.com/in/rohith-kumar-m-a043ab2a3/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600 transition-colors">
+                                <FiLinkedin size={24} />
+                            </a>
+                            <a href="https://github.com/Rohithx-07/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600 transition-colors">
+                                <FiGithub size={24} />
+                            </a>
+                            <a href="mailto:rohithkumarm2006@gmail.com" className="text-black hover:text-gray-600 transition-colors">
+                                <FiMail size={24} />
+                            </a>
+                        </div>
                     </motion.div>
 
                     <motion.div

@@ -4,18 +4,18 @@ import { FiAward, FiCode, FiTrendingUp } from 'react-icons/fi';
 
 const ACHIEVEMENTS_DATA = [
     {
-        title: 'AWS Certified Developer',
-        description: 'Associate Level certification validating expertise in developing and maintaining AWS-based applications.',
+        title: 'Acquiring Data',
+        description: 'Achieved Gold Level Certification in Acquiring Data through FutureSkills Prime, an initiative by NASSCOM and the Government of India.',
         icon: <FiTrendingUp size={32} />
     },
     {
-        title: 'Global Hackathon Winner 2024',
-        description: '1st place out of 500+ teams for developing an accessible AI-powered education tool using Next.js and OpenAI.',
+        title: 'CodeBind Technologies',
+        description: 'Web Development - Intern.',
         icon: <FiCode size={32} />
     },
     {
-        title: 'Open Source Contributor',
-        description: 'Merged 15+ pull requests into prominent React ecosystem libraries, improving performance and fixing deep bugs.',
+        title: 'Top Tech Developers',
+        description: 'Data Science - Intern.',
         icon: <FiAward size={32} />
     }
 ];
